@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Data Filter</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/d3.js"></script>
+</head>
+
+<body>
+
+<h2>--最活跃媒体微博--   TOP 10</h2>
+
+<script type="text/javascript">
+    var data = [ // <-A
+        {expense: 344, category: "新浪汽车"},
+        {expense: 208, category: "太平洋汽车"},
+        {expense: 182, category: "汽车之家"},
+        {expense: 125, category: "autocorweekly"},
+        {expense: 115, category: "易车网"},
+        {expense: 111, category: "汽车周刊"},
+        {expense: 108, category: "凤凰汽车"},
+        {expense: 102, category: "汽车分析"},
+        {expense: 94, category: "中国汽车报"},
+        {expense: 92, category: "车讯网"}
+    ];
+    function render(data, category) {
+        d3.select("body").selectAll("div.h-bar") // <-B
+                .data(data)
+            .enter()
+            .append("div")
+                .attr("class", "h-bar")
+            .append("span");
+            
+        d3.select("body").selectAll("div.h-bar") // <-C
+                .data(data)
+            .exit().remove();
+
+        d3.select("body").selectAll("div.h-bar") // <-D
+                .data(data)
+            .attr("class", "h-bar")
+            .style("width", function (d) {
+                return (d.expense * 1) + "px";}
+            )
+            .select("span")
+                .text(function (d) {
+                    return d.category + d.expense;
+                });
+        
+        d3.select("body").selectAll("div.h-bar")
+                .filter(function (d, i) { // <-E
+                    return d.category == category;
+                })
+                .classed("selected", true);
+    }
+    render(data);
+/*    
+    function select(category) {
+        render(data, category);
+    }
+*/
+</script>
+<!--
+<div class="control-group">
+    <button onclick="select('新浪汽车')">
+        新浪汽车
+    </button>
+    <button onclick="select('太平洋汽车')">
+        太平洋汽车
+    </button>
+    <button onclick="select('汽车之家')">
+        汽车之家
+    </button>
+</div>
+-->
+</body>
+
+</html>
