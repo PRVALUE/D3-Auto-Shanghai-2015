@@ -10,16 +10,22 @@
 </head>
 
 <body>
-    <br></br>
+    <br>
     <div class="p2title_">
-        <p>微博最活跃账号（2015 VS 2014）</p>
+        <p>微博媒体最活跃账号</p>
     </div>
 
-    <br>
     <div class="p7title">
-        <strong><p>-最活跃媒体微博-  TOP10</p></strong>
+        <div class="p7-1">
+            <span>2015</span>
+        </div>
+        <div class="p7-2">
+            <span>TOP10</span>
+        </div>
     </div>
+
 <script type="text/javascript">
+/*
     var data = [ // <-A
         {num:1, expense: 192, category: "太平洋汽车"},
         {num:2, expense: 124, category: "易车网"},
@@ -37,6 +43,8 @@
                 .data(data)
                 .enter()
                 .append("div")
+                    .attr("class", "p7-chart")
+                .append("div")
                     .attr("class", "h-bar");
         div.append("span")
             .attr("class","number");
@@ -52,7 +60,7 @@
                 .data(data)
             .attr("class", "h-bar")
             .style("width", function (d) {
-                return (d.expense * 1) + "px";}
+                return (d.expense * 0.7) + "px";}
             );
             my_data.select("span")
                 .text(function (d) {
@@ -73,25 +81,88 @@
                 .classed("selected", true);
     }
     render(data);
-/*    
-    function select(category) {
-        render(data, category);
-    }
-*/
+    */
 </script>
-<!--
-<div class="control-group">
-    <button onclick="select('新浪汽车')">
-        新浪汽车
-    </button>
-    <button onclick="select('太平洋汽车')">
-        太平洋汽车
-    </button>
-    <button onclick="select('汽车之家')">
-        汽车之家
-    </button>
-</div>
--->
+
+    <div id='root'></div>
+<script type="text/javascript">
+    var root = d3.select('#root');
+
+    var data = [ // <-A
+        {num:1, expense: 192, category: "太平洋汽车"},
+        {num:2, expense: 124, category: "易车网"},
+        {num:3, expense: 115, category: "汽车周刊"},
+        {num:4, expense: 114, category: "人民网"},
+        {num:5, expense: 112, category: "新浪汽车"},
+        {num:6, expense: 94, category: "中国汽车报"},
+        {num:7, expense: 90, category: "中国经营报"},
+        {num:8, expense: 89, category: "汽车点评网"},
+        {num:9, expense: 76, category: "新京报"},
+        {num:10, expense: 68, category: "重庆晚报"}
+    ];
+
+    var render = function (data) {
+        var div = d3.select("body").selectAll("div.h-bar") // <-B
+                .data(data)
+                .enter()
+                .append("div")
+                    .attr("class", "p7-chart")
+                .append("div")
+                    .attr("class", "h-bar");
+        div.append("span")
+            .attr("class","number");
+        div.append("span")
+            .attr("class","left");
+        div.append("span")
+            .attr("class","right");
+        d3.select("body").selectAll("div.h-bar") // <-C
+                .data(data)
+            .exit().remove();
+
+        my_data = d3.select("body").selectAll("div.h-bar") // <-D
+                .data(data)
+            .attr("class", "h-bar")
+            .style("width", function (d) {
+                return (d.expense * 0.7) + "px";}
+            );
+            my_data.select("span")
+                .text(function (d) {
+                    return d.num;
+                });
+            my_data.select("span.left")
+                .text(function (d) {
+                    return d.category;
+                });
+            my_data.select("span.right")
+                .text(function (d) {
+                    return d.expense;
+                });
+                /*
+        d3.select("body").selectAll("div.h-bar")
+                .filter(function (d, i) { // <-E
+                    return d.category == category;
+                })
+                .classed("selected", true);
+                */
+    }
+
+    root.append('button')
+        .text('run renderBars')
+        .on("click", render(data));
+</script>
+
+    <br>
+
+    <div class="p7title">
+        <div class="p7-1">
+            <span>2014</span>
+        </div>
+        <div class="p7-2">
+            <span>TOP10</span>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
