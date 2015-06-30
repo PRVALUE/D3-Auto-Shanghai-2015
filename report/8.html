@@ -8,9 +8,10 @@
     <script type="text/javascript" src="js/d3.js"></script>
     <link rel="stylesheet" href="css/my-css.css" media="screen" type="text/css" />
 </head>
+
 <body>
     <div class="p2title_">
-        <p>微博媒体最活跃账号</p>
+        <p>微博媒体人最活跃账号</p>
     </div>
 
     <div class="p7title">
@@ -24,46 +25,46 @@
 
 <script type="text/javascript">
     var data = [ // <-A
-        {num:1, expense: 192, category: "太平洋汽车"},
-        {num:2, expense: 124, category: "易车网"},
-        {num:3, expense: 115, category: "汽车周刊"},
-        {num:4, expense: 114, category: "人民网"},
-        {num:5, expense: 112, category: "新浪汽车"},
-        {num:6, expense: 94, category: "中国汽车报"},
-        {num:7, expense: 90, category: "中国经营报"},
-        {num:8, expense: 89, category: "汽车点评网"},
-        {num:9, expense: 76, category: "新京报"},
-        {num:10, expense: 68, category: "重庆晚报"}
+        {num:1, expense: 25, category: "PS3保罗"},
+        {num:2, expense: 19, category: "车讯网-carxoo"},
+        {num:3, expense: 17, category: "王政"},
+        {num:4, expense: 17, category: "车市红点"},
+        {num:5, expense: 12, category: "苏雨农"},
+        {num:6, expense: 8, category: "何宽_AT"},
+        {num:7, expense: 6, category: "李克Mac"},
+        {num:8, expense: 6, category: "咏雪Maggie"},
+        {num:9, expense: 4, category: "丹东晓程"},
+        {num:10, expense: 4, category: "张志勇0318"}
     ];
     function render(data, category) {
-        var div = d3.select("body").selectAll("div.hbar") // <-B
+        var div = d3.select("body").selectAll("div.hbar3") // <-B
                 .data(data)
                 .enter()
                 .append("div")
                     .attr("class", "p7-chart")
                 .append("div")
-                    .attr("class", "hbar");
+                    .attr("class", "hbar3");
         div.append("span")
-            .attr("class","number");
+            .attr("class","number2");
         div.append("span")
-            .attr("class","left");
+            .attr("class","left2");
         div.append("span")
             .attr("class","right");
-        d3.select("body").selectAll("div.hbar") // <-C
+        d3.select("body").selectAll("div.hbar3") // <-C
                 .data(data)
             .exit().remove();
 
-        my_data = d3.select("body").selectAll("div.hbar") // <-D
+        my_data = d3.select("body").selectAll("div.hbar3") // <-D
                 .data(data)
-            .attr("class", "hbar")
+            .attr("class", "hbar3")
             .style("width", function (d) {
-                return (d.expense * 0.7) + "px";}
+                return (d.expense * 1) + "px";}
             );
             my_data.select("span")
                 .text(function (d) {
                     return d.num;
                 });
-            my_data.select("span.left")
+            my_data.select("span.left2")
                 .text(function (d) {
                     return d.category;
                 });
@@ -71,7 +72,7 @@
                 .text(function (d) {
                     return d.expense;
                 });
-        d3.select("body").selectAll("div.hbar")
+        d3.select("body").selectAll("div.hbar3")
                 .filter(function (d, i) { // <-E
                     return d.category == category;
                 })
@@ -79,6 +80,7 @@
     }
     render(data);
 </script>
+
 
     <div class="p7title">
         <div class="p7-1">
@@ -93,45 +95,45 @@
 
     var render2 = function () {
         var data = [ // <-A
-        {num:1, expense: 344, category: "新浪汽车"},
-        {num:2, expense: 208, category: "太平洋汽车"},
-        {num:3, expense: 182, category: "汽车之家"},
-        {num:4, expense: 125, category: "autocarweekly"},
-        {num:5, expense: 115, category: "易车网"},
-        {num:6, expense: 111, category: "汽车周刊"},
-        {num:7, expense: 108, category: "凤凰汽车"},
-        {num:8, expense: 102, category: "汽车营销分析"},
-        {num:9, expense: 94, category: "中国汽车报"},
-        {num:10, expense: 92, category: "车讯网"}
+        {num:1, expense: 262, category: "汽车经济杂志张久"},
+        {num:2, expense: 55, category: "苏雨农"},
+        {num:3, expense: 53, category: "车市红点"},
+        {num:4, expense: 40, category: "耿伟达"},
+        {num:5, expense: 38, category: "汽车公社卫金桥"},
+        {num:6, expense: 26, category: "PS3保罗"},
+        {num:7, expense: 25, category: "韩路-"},
+        {num:8, expense: 19, category: "汽车公社赵威"},
+        {num:9, expense: 19, category: "汽车公社_魏东升"},
+        {num:10, expense: 19, category: "郭登礼-汽车周刊"}
         ];
-        var div = d3.select("body").selectAll("div.hbar2") // <-B
+        var div = d3.select("body").selectAll("div.hbar4") // <-B
                 .data(data)
                 .enter()
                 .append("div")
                     .attr("class", "p7-chart")
                 .append("div")
-                    .attr("class", "hbar2");
+                    .attr("class", "hbar4");
         div.append("span")
-            .attr("class","number");
+            .attr("class","number2");
         div.append("span")
-            .attr("class","left");
+            .attr("class","left2");
         div.append("span")
             .attr("class","right");
-        d3.select("body").selectAll("div.hbar2") // <-C
+        d3.select("body").selectAll("div.hbar4") // <-C
                 .data(data)
             .exit().remove();
 
-        my_data = d3.select("body").selectAll("div.hbar2") // <-D
+        my_data = d3.select("body").selectAll("div.hbar4") // <-D
                 .data(data)
-            .attr("class", "hbar2")
+            .attr("class", "hbar4")
             .style("width", function (d) {
-                return (d.expense * 0.7) + "px";}
+                return (d.expense * 0.9) + "px";}
             );
             my_data.select("span")
                 .text(function (d) {
                     return d.num;
                 });
-            my_data.select("span.left")
+            my_data.select("span.left2")
                 .text(function (d) {
                     return d.category;
                 });
@@ -140,7 +142,7 @@
                     return d.expense;
                 });
                 /*
-        d3.select("body").selectAll("div.bar2")
+        d3.select("body").selectAll("div.h-bar")
                 .filter(function (d, i) { // <-E
                     return d.category == category;
                 })
@@ -159,5 +161,9 @@
     </div>
 */
 </script>
+    <div class="p8title_">
+        <p>微博活跃度暴跌，尤其是媒体人的集体缄默，让我们从一个全新的角度审视微博传播课题。</p>
+    </div>
+
 </body>
 </html>
