@@ -76,6 +76,7 @@ button {
     color: #f0f8ff;
     text-align: right;
     padding-right: 2px;
+    float:left;
 }
 .p24hbar {
     min-height: 13px;
@@ -96,6 +97,7 @@ button {
     color: #f0f8ff;
     text-align: right;
     padding-right: 2px;
+    float:left;
 }
 .p19wrapper{
     position: absolute;
@@ -104,17 +106,22 @@ button {
 }
 .p23wrapper{
     position: absolute;
-    bottom:60px;
+    bottom:5px;
     z-index: -1;
 }
 .p24-1wrapper{
     position: absolute;
-    top:40px;
+    top:35px;
     z-index: -1;
 }
 .p24-2wrapper{
     position: absolute;
-    top:270px;
+    top:35px;
+    z-index: -1;
+}
+.p26-1wrapper{
+    position: absolute;
+    top:35px;
     z-index: -1;
 }
 #canvas-svg2 {
@@ -136,6 +143,14 @@ button {
 #canvas-svg7 {
     position: absolute;
     top:240px;
+}
+#canvas-svg8 {
+    position: absolute;
+    top:60px;
+}
+#canvas-svg9 {
+    position: absolute;
+    top:270px;
 }
 .hbar {
     min-height: 15px;
