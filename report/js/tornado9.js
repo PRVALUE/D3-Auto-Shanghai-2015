@@ -48,70 +48,70 @@ svg.append("image")
     .attr("y",MARGIN_TOP )  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p24-1.png"); 
+    .attr("xlink:href","../img/p26-11.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 15)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p24-2.png"); 
+    .attr("xlink:href","../img/p26-12.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 30)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p24-3.png"); 
+    .attr("xlink:href","../img/p26-13.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 45)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p24-4.png"); 
+    .attr("xlink:href","../img/p26-14.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 60)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p24-5.png"); 
+    .attr("xlink:href","../img/p26-15.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 75)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p24-6.png"); 
+    .attr("xlink:href","../img/p26-16.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 90)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p24-7.png"); 
+    .attr("xlink:href","../img/p26-17.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 105)  
     .attr("width",16.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p24-8.png"); 
+    .attr("xlink:href","../img/p26-18.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 120)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p24-9.png"); 
+    .attr("xlink:href","../img/p24-1.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 135)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p24-10.png"); 
+    .attr("xlink:href","../img/p26-20.png"); 
 
 /*
 svg.append("text").text("2").attr({
@@ -123,16 +123,16 @@ svg.append("text").text("2").attr({
 });
 */
 var data = [ // <-A
-        {num:1, expense: 326, category: "全新SUV",total:60},
-        {num:2, expense: 314, category: "福克斯",total:60},
-        {num:3, expense: 251, category: "观致2SUV",total:60},
-        {num:4, expense: 244, category: "元",total:60},
-        {num:5, expense: 240, category: "东风1号",total:60},
-        {num:6, expense: 179, category: "领航员",total:60},
-        {num:7, expense: 164, category: "金牛座",total:60},
-        {num:8, expense: 147, category: "博瑞",total:60},
-        {num:9, expense: 121, category: "全新途胜",total:60},
-        {num:10, expense: 114, category: "CT6",total:60}
+        {num:1, expense: 165, category: "大切诺基",total:60},
+        {num:2, expense: 149, category: "S60L",total:60},
+        {num:3, expense: 138, category: "GT-R nismo",total:60},
+        {num:4, expense: 131, category: "萨瓦纳",total:60},
+        {num:5, expense: 127, category: "MU-X",total:60},
+        {num:6, expense: 115, category: "H6",total:60},
+        {num:7, expense: 113, category: "K9",total:60},
+        {num:8, expense: 111, category: "CS10",total:60},
+        {num:9, expense: 102, category: "CR-V",total:60},
+        {num:10, expense: 89, category: "M6",total:60}
     ];
 
 function render(data, category) {
@@ -160,7 +160,7 @@ function render(data, category) {
                 .data(data)
             .attr("class", "p24-1chart")
             .style("width", function (d) {
-                return (d.expense * 0.5 +60) + "px";}
+                return (d.expense * 1 +60) + "px";}
             );
 
         my_data = d3.select("#canvas-svg9").selectAll("div.p24-1hbar") // <-D

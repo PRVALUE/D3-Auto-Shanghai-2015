@@ -99,6 +99,17 @@ button {
     padding-right: 2px;
     float:left;
 }
+.p34hbar {
+    min-height: 13px;
+    min-width: 10px;
+    background-color: rgb(219,220,220);
+    margin-bottom: 2px;
+    font-size: 11px;
+    color: rgb(205,45,45);
+    text-align: right;
+    padding-right: 2px;
+    float:left;
+}
 .p19wrapper{
     position: absolute;
     bottom:10px;
@@ -151,6 +162,18 @@ button {
 #canvas-svg9 {
     position: absolute;
     top:270px;
+}
+#canvas-svg10 {
+    position: absolute;
+    top:60px;
+}
+#canvas-svg13 {
+    position: absolute;
+    top:100px;
+}
+#canvas-svg14 {
+    position: absolute;
+    top:100px;
 }
 .hbar {
     min-height: 15px;
@@ -411,6 +434,16 @@ button {
 .p21left {
     position: absolute;
     left: 70px;
+}
+.p34left {
+    position: absolute;
+    left: 60px;
+    font-size: 11px;
+}
+.p35left {
+    position: absolute;
+    left: 50px;
+    font-size: 11px;
 }
 .right {
     position: absolute;
