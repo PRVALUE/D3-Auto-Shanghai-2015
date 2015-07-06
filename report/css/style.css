@@ -135,6 +135,10 @@ button {
     top:35px;
     z-index: -1;
 }
+#canvas-svg {
+    position: absolute;
+    top:90px;
+}
 #canvas-svg2 {
     position: absolute;
     bottom:29px;
