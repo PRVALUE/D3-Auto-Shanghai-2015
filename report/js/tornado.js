@@ -30,18 +30,18 @@ var svg = d3.select("#canvas-svg").append("svg").attr({
 var maleScale = d3.scale.linear(), femaleScale = d3.scale.linear(), maleAxis = d3.svg.axis().orient("top").tickSize(-HEIGHT, 0, 0).scale(maleScale), femaleAxis = d3.svg.axis().orient("top").tickSize(-HEIGHT, 0, 0).scale(femaleScale);
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH + 40)  
+    .attr("x",LABEL_WIDTH + 20)  
     .attr("y",MARGIN_TOP - 25)  
     .attr("width",25)  
     .attr("height",25)  
-    .attr("xlink:href","../img/weibo.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/weibo.png"); 
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH + 65)  
+    .attr("x",LABEL_WIDTH + 50)  
     .attr("y",MARGIN_TOP - 25)  
     .attr("width",25)  
     .attr("height",25)  
-    .attr("xlink:href","../img/weixin.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/weixin.png"); 
 
 svg.append("text").text("1").attr({
     x: LABEL_WIDTH -50,
@@ -51,14 +51,14 @@ svg.append("text").text("1").attr({
 });
 
 svg.append("text").text("191").attr({
-    x: LABEL_WIDTH +10,
+    x: LABEL_WIDTH - 10,
     y: MARGIN_TOP + 12,
     fill: "rgb(203,47,43)",
     class:"p4-content"
 });
 
 svg.append("text").text("733").attr({
-    x: WIDTH - 25 ,
+    x: WIDTH - 45 ,
     y: MARGIN_TOP + 12,
     fill: "rgb(141,194,31)",
     class:"p4-content"
@@ -69,14 +69,14 @@ svg.append("image")
     .attr("y",MARGIN_TOP )  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-1.png"); 
 
 svg.append("image")
-    .attr("x",WIDTH)  
+    .attr("x",WIDTH - 20)  
     .attr("y",MARGIN_TOP )  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-1-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-1-1.png"); 
 
 svg.append("text").text("2").attr({
     x: LABEL_WIDTH -50,
@@ -86,14 +86,14 @@ svg.append("text").text("2").attr({
 });
 
 svg.append("text").text("170").attr({
-    x: LABEL_WIDTH +10,
+    x: LABEL_WIDTH -10,
     y: MARGIN_TOP + 27,
     fill: "rgb(203,47,43)",
     class:"p4-content"
 });
 
 svg.append("text").text("649").attr({
-    x: WIDTH - 25 ,
+    x: WIDTH - 45 ,
     y: MARGIN_TOP + 27,
     fill: "rgb(141,194,31)",
     class:"p4-content"
@@ -104,14 +104,14 @@ svg.append("image")
     .attr("y",MARGIN_TOP + 15)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-2.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-2.png"); 
 
 svg.append("image")
-    .attr("x",WIDTH)  
+    .attr("x",WIDTH - 20)  
     .attr("y",MARGIN_TOP + 15)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-2-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-2-1.png"); 
 
 svg.append("text").text("3").attr({
     x: LABEL_WIDTH -50,
@@ -121,14 +121,14 @@ svg.append("text").text("3").attr({
 });
 
 svg.append("text").text("147").attr({
-    x: LABEL_WIDTH +10,
+    x: LABEL_WIDTH -10,
     y: MARGIN_TOP + 42,
     fill: "rgb(203,47,43)",
     class:"p4-content"
 });
 
 svg.append("text").text("565").attr({
-    x: WIDTH - 25 ,
+    x: WIDTH - 45 ,
     y: MARGIN_TOP + 42,
     fill: "rgb(141,194,31)",
     class:"p4-content"
@@ -139,14 +139,14 @@ svg.append("image")
     .attr("y",MARGIN_TOP + 30)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-3.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-3.png"); 
 
 svg.append("image")
-    .attr("x",WIDTH)  
+    .attr("x",WIDTH - 20)  
     .attr("y",MARGIN_TOP + 30)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-3-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-3-1.png"); 
 
 svg.append("text").text("4").attr({
     x: LABEL_WIDTH -50,
@@ -156,14 +156,14 @@ svg.append("text").text("4").attr({
 });
 
 svg.append("text").text("122").attr({
-    x: LABEL_WIDTH +10,
+    x: LABEL_WIDTH -10,
     y: MARGIN_TOP + 57,
     fill: "rgb(203,47,43)",
     class:"p4-content"
 });
 
 svg.append("text").text("552").attr({
-    x: WIDTH - 25 ,
+    x: WIDTH - 45 ,
     y: MARGIN_TOP + 57,
     fill: "rgb(141,194,31)",
     class:"p4-content"
@@ -174,14 +174,14 @@ svg.append("image")
     .attr("y",MARGIN_TOP + 45)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-4.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-4.png"); 
 
 svg.append("image")
-    .attr("x",WIDTH)  
+    .attr("x",WIDTH - 20)  
     .attr("y",MARGIN_TOP + 45)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-4-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-4-1.png"); 
 
 svg.append("text").text("5").attr({
     x: LABEL_WIDTH -50,
@@ -191,14 +191,14 @@ svg.append("text").text("5").attr({
 });
 
 svg.append("text").text("113").attr({
-    x: LABEL_WIDTH +10,
+    x: LABEL_WIDTH -10,
     y: MARGIN_TOP + 72,
     fill: "rgb(203,47,43)",
     class:"p4-content"
 });
 
 svg.append("text").text("480").attr({
-    x: WIDTH - 25 ,
+    x: WIDTH - 45 ,
     y: MARGIN_TOP + 72,
     fill: "rgb(141,194,31)",
     class:"p4-content"
@@ -209,14 +209,14 @@ svg.append("image")
     .attr("y",MARGIN_TOP + 60)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-5.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-5.png"); 
 
 svg.append("image")
-    .attr("x",WIDTH)  
+    .attr("x",WIDTH - 20)  
     .attr("y",MARGIN_TOP + 60)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-5-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-5-1.png"); 
 
 svg.append("text").text("6").attr({
     x: LABEL_WIDTH -50,
@@ -226,14 +226,14 @@ svg.append("text").text("6").attr({
 });
 
 svg.append("text").text("97").attr({
-    x: LABEL_WIDTH +10,
+    x: LABEL_WIDTH -10,
     y: MARGIN_TOP + 87,
     fill: "rgb(203,47,43)",
     class:"p4-content"
 });
 
 svg.append("text").text("461").attr({
-    x: WIDTH - 25 ,
+    x: WIDTH - 45 ,
     y: MARGIN_TOP + 87,
     fill: "rgb(141,194,31)",
     class:"p4-content"
@@ -244,14 +244,14 @@ svg.append("image")
     .attr("y",MARGIN_TOP + 75)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-6.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-6.png"); 
 
 svg.append("image")
-    .attr("x",WIDTH)  
+    .attr("x",WIDTH - 20)  
     .attr("y",MARGIN_TOP + 75)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-6-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-6-1.png"); 
 
 svg.append("text").text("7").attr({
     x: LABEL_WIDTH -50,
@@ -261,14 +261,14 @@ svg.append("text").text("7").attr({
 });
 
 svg.append("text").text("96").attr({
-    x: LABEL_WIDTH +10,
+    x: LABEL_WIDTH -10,
     y: MARGIN_TOP + 102,
     fill: "rgb(203,47,43)",
     class:"p4-content"
 });
 
 svg.append("text").text("430").attr({
-    x: WIDTH - 25 ,
+    x: WIDTH - 45 ,
     y: MARGIN_TOP + 102,
     fill: "rgb(141,194,31)",
     class:"p4-content"
@@ -279,14 +279,14 @@ svg.append("image")
     .attr("y",MARGIN_TOP + 90)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-7.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-7.png"); 
 
 svg.append("image")
-    .attr("x",WIDTH)  
+    .attr("x",WIDTH - 20)  
     .attr("y",MARGIN_TOP + 90)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-7-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-7-1.png"); 
 
 svg.append("text").text("8").attr({
     x: LABEL_WIDTH -50,
@@ -296,14 +296,14 @@ svg.append("text").text("8").attr({
 });
 
 svg.append("text").text("71").attr({
-    x: LABEL_WIDTH +10,
+    x: LABEL_WIDTH -10,
     y: MARGIN_TOP + 117,
     fill: "rgb(203,47,43)",
     class:"p4-content"
 });
 
 svg.append("text").text("417").attr({
-    x: WIDTH - 25 ,
+    x: WIDTH - 45 ,
     y: MARGIN_TOP + 117,
     fill: "rgb(141,194,31)",
     class:"p4-content"
@@ -314,14 +314,14 @@ svg.append("image")
     .attr("y",MARGIN_TOP + 105)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-8.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-8.png"); 
 
 svg.append("image")
-    .attr("x",WIDTH)  
+    .attr("x",WIDTH - 20)  
     .attr("y",MARGIN_TOP + 105)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-8-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-8-1.png"); 
 
 svg.append("text").text("9").attr({
     x: LABEL_WIDTH -50,
@@ -331,14 +331,14 @@ svg.append("text").text("9").attr({
 });
 
 svg.append("text").text("51").attr({
-    x: LABEL_WIDTH +10,
+    x: LABEL_WIDTH -10,
     y: MARGIN_TOP + 132,
     fill: "rgb(203,47,43)",
     class:"p4-content"
 });
 
 svg.append("text").text("402").attr({
-    x: WIDTH - 25 ,
+    x: WIDTH - 45 ,
     y: MARGIN_TOP + 132,
     fill: "rgb(141,194,31)",
     class:"p4-content"
@@ -349,14 +349,14 @@ svg.append("image")
     .attr("y",MARGIN_TOP + 120)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-9.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-9.png"); 
 
 svg.append("image")
-    .attr("x",WIDTH)  
+    .attr("x",WIDTH - 20)  
     .attr("y",MARGIN_TOP + 120)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-9-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-9-1.png"); 
 
 svg.append("text").text("10").attr({
     x: LABEL_WIDTH -50,
@@ -366,14 +366,14 @@ svg.append("text").text("10").attr({
 });
 
 svg.append("text").text("50").attr({
-    x: LABEL_WIDTH +10,
+    x: LABEL_WIDTH -10,
     y: MARGIN_TOP + 147,
     fill: "rgb(203,47,43)",
     class:"p4-content"
 });
 
 svg.append("text").text("357").attr({
-    x: WIDTH - 25 ,
+    x: WIDTH - 45 ,
     y: MARGIN_TOP + 147,
     fill: "rgb(141,194,31)",
     class:"p4-content"
@@ -384,14 +384,14 @@ svg.append("image")
     .attr("y",MARGIN_TOP + 135)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-10.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-10.png"); 
 
 svg.append("image")
-    .attr("x",WIDTH)  
+    .attr("x",WIDTH - 20)  
     .attr("y",MARGIN_TOP + 135)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-10-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-10-1.png"); 
 /*
 svg.append("text").text("2").attr({
     x: WIDTH,
@@ -447,7 +447,7 @@ function render() {
     var row = svg.selectAll("g.row").data(entries);
     row.enter().append("g").classed("row", true).attr({
         transform: function(d, i) {
-            return "translate(" + (LABEL_WIDTH + (WIDTH - LABEL_WIDTH) / 3) + "," + (MARGIN_TOP + i * ROW_HEIGHT) + ")";
+            return "translate(" + (LABEL_WIDTH + (WIDTH - LABEL_WIDTH) / 4) + "," + (MARGIN_TOP + i * ROW_HEIGHT) + ")";
         }
     }).call(function(row) {
         row.append("rect").attr({
