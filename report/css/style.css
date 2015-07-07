@@ -458,6 +458,7 @@ button {
     float:right;
     font-size:11px;
     color: white;
+    position:absolute;
 }
 .p19right {
     text-align: right;
@@ -468,7 +469,7 @@ button {
 .p19right-2 {
     text-align: right;
     position: absolute;
-    left: 105%;
+    left: 113%;
     color: rgb(89,87,87);
 }
 .p21right-2 {

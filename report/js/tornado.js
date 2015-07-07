@@ -44,7 +44,7 @@ svg.append("image")
     .attr("xlink:href","../img/weixin.png"); 
 
 svg.append("text").text("1").attr({
-    x: LABEL_WIDTH -30,
+    x: LABEL_WIDTH -50,
     y: MARGIN_TOP + 12,
     fill: "rgb(203,47,43)",
     class:"p4-content"
@@ -65,7 +65,7 @@ svg.append("text").text("733").attr({
 });
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 10)  
+    .attr("x",LABEL_WIDTH - 30)  
     .attr("y",MARGIN_TOP )  
     .attr("width",14.5)  
     .attr("height",14.5)  
@@ -79,7 +79,7 @@ svg.append("image")
     .attr("xlink:href","../img/p19-1-1.png"); 
 
 svg.append("text").text("2").attr({
-    x: LABEL_WIDTH -30,
+    x: LABEL_WIDTH -50,
     y: MARGIN_TOP + 27,
     fill: "rgb(203,47,43)",
     class:"p4-content"
@@ -100,7 +100,7 @@ svg.append("text").text("649").attr({
 });
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 10)  
+    .attr("x",LABEL_WIDTH - 30)  
     .attr("y",MARGIN_TOP + 15)  
     .attr("width",14.5)  
     .attr("height",14.5)  
@@ -114,7 +114,7 @@ svg.append("image")
     .attr("xlink:href","../img/p19-2-1.png"); 
 
 svg.append("text").text("3").attr({
-    x: LABEL_WIDTH -30,
+    x: LABEL_WIDTH -50,
     y: MARGIN_TOP + 42,
     fill: "rgb(203,47,43)",
     class:"p4-content"
@@ -135,7 +135,7 @@ svg.append("text").text("565").attr({
 });
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 10)  
+    .attr("x",LABEL_WIDTH - 30)  
     .attr("y",MARGIN_TOP + 30)  
     .attr("width",14.5)  
     .attr("height",14.5)  
@@ -149,7 +149,7 @@ svg.append("image")
     .attr("xlink:href","../img/p19-3-1.png"); 
 
 svg.append("text").text("4").attr({
-    x: LABEL_WIDTH -30,
+    x: LABEL_WIDTH -50,
     y: MARGIN_TOP + 57,
     fill: "rgb(203,47,43)",
     class:"p4-content"
@@ -170,7 +170,7 @@ svg.append("text").text("552").attr({
 });
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 10)  
+    .attr("x",LABEL_WIDTH - 30)  
     .attr("y",MARGIN_TOP + 45)  
     .attr("width",14.5)  
     .attr("height",14.5)  
@@ -184,7 +184,7 @@ svg.append("image")
     .attr("xlink:href","../img/p19-4-1.png"); 
 
 svg.append("text").text("5").attr({
-    x: LABEL_WIDTH -30,
+    x: LABEL_WIDTH -50,
     y: MARGIN_TOP + 72,
     fill: "rgb(203,47,43)",
     class:"p4-content"
@@ -205,7 +205,7 @@ svg.append("text").text("480").attr({
 });
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 10)  
+    .attr("x",LABEL_WIDTH - 30)  
     .attr("y",MARGIN_TOP + 60)  
     .attr("width",14.5)  
     .attr("height",14.5)  
@@ -219,7 +219,7 @@ svg.append("image")
     .attr("xlink:href","../img/p19-5-1.png"); 
 
 svg.append("text").text("6").attr({
-    x: LABEL_WIDTH -30,
+    x: LABEL_WIDTH -50,
     y: MARGIN_TOP + 87,
     fill: "rgb(203,47,43)",
     class:"p4-content"
@@ -240,7 +240,7 @@ svg.append("text").text("461").attr({
 });
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 10)  
+    .attr("x",LABEL_WIDTH - 30)  
     .attr("y",MARGIN_TOP + 75)  
     .attr("width",14.5)  
     .attr("height",14.5)  
@@ -254,7 +254,7 @@ svg.append("image")
     .attr("xlink:href","../img/p19-6-1.png"); 
 
 svg.append("text").text("7").attr({
-    x: LABEL_WIDTH -30,
+    x: LABEL_WIDTH -50,
     y: MARGIN_TOP + 102,
     fill: "rgb(203,47,43)",
     class:"p4-content"
@@ -275,7 +275,7 @@ svg.append("text").text("430").attr({
 });
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 10)  
+    .attr("x",LABEL_WIDTH - 30)  
     .attr("y",MARGIN_TOP + 90)  
     .attr("width",14.5)  
     .attr("height",14.5)  
@@ -289,7 +289,7 @@ svg.append("image")
     .attr("xlink:href","../img/p19-7-1.png"); 
 
 svg.append("text").text("8").attr({
-    x: LABEL_WIDTH -30,
+    x: LABEL_WIDTH -50,
     y: MARGIN_TOP + 117,
     fill: "rgb(203,47,43)",
     class:"p4-content"
@@ -310,7 +310,7 @@ svg.append("text").text("417").attr({
 });
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 10)  
+    .attr("x",LABEL_WIDTH - 30)  
     .attr("y",MARGIN_TOP + 105)  
     .attr("width",14.5)  
     .attr("height",14.5)  
@@ -324,7 +324,7 @@ svg.append("image")
     .attr("xlink:href","../img/p19-8-1.png"); 
 
 svg.append("text").text("9").attr({
-    x: LABEL_WIDTH -30,
+    x: LABEL_WIDTH -50,
     y: MARGIN_TOP + 132,
     fill: "rgb(203,47,43)",
     class:"p4-content"
@@ -345,7 +345,7 @@ svg.append("text").text("402").attr({
 });
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 10)  
+    .attr("x",LABEL_WIDTH - 30)  
     .attr("y",MARGIN_TOP + 120)  
     .attr("width",14.5)  
     .attr("height",14.5)  
@@ -359,7 +359,7 @@ svg.append("image")
     .attr("xlink:href","../img/p19-9-1.png"); 
 
 svg.append("text").text("10").attr({
-    x: LABEL_WIDTH -30,
+    x: LABEL_WIDTH -50,
     y: MARGIN_TOP + 147,
     fill: "rgb(203,47,43)",
     class:"p4-content"
@@ -380,7 +380,7 @@ svg.append("text").text("357").attr({
 });
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 10)  
+    .attr("x",LABEL_WIDTH - 30)  
     .attr("y",MARGIN_TOP + 135)  
     .attr("width",14.5)  
     .attr("height",14.5)  
@@ -450,12 +450,6 @@ function render() {
             return "translate(" + (LABEL_WIDTH + (WIDTH - LABEL_WIDTH) / 3) + "," + (MARGIN_TOP + i * ROW_HEIGHT) + ")";
         }
     }).call(function(row) {
-        row.append("text").attr({
-            "dx": 10,
-            "class": "label",
-            fill: "#333",
-            transform: " translate(" + (-(WIDTH - LABEL_WIDTH) / 3 - LABEL_WIDTH) + "," + ROW_HEIGHT + ") scale(.85)"
-        });
         row.append("rect").attr({
             "class": "male",
             fill: "rgb(203,47,43)",
