@@ -1,6 +1,7 @@
 body {
   font-family: "Microsoft YaHei" ! important; 
   background-color: rgb(47,47,47);
+  height: 100%;
 }
 button {
 	width:100px;

@@ -424,7 +424,7 @@ button {
 .left2 {
     position: absolute;
     left: 20px;
-    color: rgb(0,96,176);
+    color: black;
 }
 .left3 {
     position: absolute;
@@ -451,7 +451,7 @@ button {
 }
 .right {
     position: absolute;
-    left: 40%;
+    left: 50%;
     color: black;
 }
 .text-right{

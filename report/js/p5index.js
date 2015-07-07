@@ -31,7 +31,7 @@ $(function(){
         baseColor: "rgba(0,0,0,0.5)",
         baseOffset: 0,
         edgeOffset : 40,//offset from edge of $this
-        percentageInnerCutout : 65,
+        percentageInnerCutout : 70,
         animation : true,
         animationSteps : 90,
         animationEasing : "easeInOutExpo",
