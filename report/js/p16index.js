@@ -1,9 +1,4 @@
-$(function(){
-  $("#doughnutChart").drawDoughnutChart([
-    { title: "媒体阅读总数",         value : 9994674,  color: "rgb(0,146,97)" },
-    { title: "自媒体阅读总数", value:  11840321,   color: "rgb(141,194,31)" }
-  ]);
-});
+
 /*!
  * jquery.drawDoughnutChart.js
  * Version: 0.3(Beta)
@@ -238,3 +233,9 @@ $(function(){
     return $this;
   };
 })(jQuery);
+$(function(){
+  $("#doughnutChart").drawDoughnutChart([
+    { title: "媒体阅读总数",         value : 9994674,  color: "rgb(0,146,97)" },
+    { title: "自媒体阅读总数", value:  11840321,   color: "rgb(141,194,31)" }
+  ]);
+});

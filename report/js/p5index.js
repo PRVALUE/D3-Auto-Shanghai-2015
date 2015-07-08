@@ -1,9 +1,4 @@
-$(function(){
-  $("#doughnutChart").drawDoughnutChart([
-    { title: "媒体", value : 245,  color: "rgb(242,150,0)" },
-    { title: "媒体人", value:  2543,   color: "rgb(233,86,94)" }
-  ]);
-});
+
 /*!
  * jquery.drawDoughnutChart.js
  * Version: 0.3(Beta)
@@ -238,3 +233,9 @@ $(function(){
     return $this;
   };
 })(jQuery);
+$(function(){
+  $("#doughnutChart").drawDoughnutChart([
+    { title: "媒体", value : 245,  color: "rgb(242,150,0)" },
+    { title: "媒体人", value:  2543,   color: "rgb(233,86,94)" }
+  ]);
+});
