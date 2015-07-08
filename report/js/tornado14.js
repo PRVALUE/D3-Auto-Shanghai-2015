@@ -31,74 +31,74 @@ var maleScale = d3.scale.linear(), femaleScale = d3.scale.linear(), maleAxis = d
 
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 30)  
+    .attr("x",LABEL_WIDTH - 40)  
     .attr("y",MARGIN_TOP )  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-3.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-3.png"); 
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 30)  
+    .attr("x",LABEL_WIDTH - 40)  
     .attr("y",MARGIN_TOP + 15)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-1.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-1.png"); 
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 30)  
+    .attr("x",LABEL_WIDTH - 40)  
     .attr("y",MARGIN_TOP + 30)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p23-2.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p23-2.png"); 
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 30)  
+    .attr("x",LABEL_WIDTH - 40)  
     .attr("y",MARGIN_TOP + 45)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p30-5.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p30-5.png"); 
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 30)  
+    .attr("x",LABEL_WIDTH - 40)  
     .attr("y",MARGIN_TOP + 60)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p23-2.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p23-2.png"); 
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 30)  
+    .attr("x",LABEL_WIDTH - 40)  
     .attr("y",MARGIN_TOP + 75)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p30-5.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p30-5.png"); 
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 30)  
+    .attr("x",LABEL_WIDTH - 40)  
     .attr("y",MARGIN_TOP + 90)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-3.png");  
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-3.png");  
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 30)  
+    .attr("x",LABEL_WIDTH - 40)  
     .attr("y",MARGIN_TOP + 105)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p23-6.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p23-6.png"); 
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 30)  
+    .attr("x",LABEL_WIDTH - 40)  
     .attr("y",MARGIN_TOP + 120)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p23-9.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p23-9.png"); 
 
 svg.append("image")
-    .attr("x",LABEL_WIDTH - 30)  
+    .attr("x",LABEL_WIDTH - 40)  
     .attr("y",MARGIN_TOP + 135)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-2.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-2.png"); 
 
 /*
 svg.append("text").text("2").attr({
@@ -110,16 +110,16 @@ svg.append("text").text("2").attr({
 });
 */
 var data = [ // <-A
-        {num:1, expense: 802, category: 298,total:1100,pp:"GLC coupe"},
-        {num:2, expense: 686, category: 414,total:1100,pp:"C COUPE GTE"},
-        {num:3, expense: 609, category: 491,total:1100,pp:"元"},
-        {num:4, expense: 533, category: 567,total:1100,pp:"Q80 Inspiration"},
-        {num:5, expense: 413, category: 687,total:1100,pp:"宋"},
-        {num:6, expense: 340, category: 760,total:1100,pp:"Q70L"},
-        {num:7, expense: 330, category: 770,total:1100,pp:"GLE"},
-        {num:8, expense: 204, category: 896,total:1100,pp:"楼兰"},
-        {num:9, expense: 200, category: 900,total:1100,pp:"NSX"},
-        {num:10, expense: 198, category: 902,total:1100,pp:"quartz"}
+        {num:1, expense: 802, category: 318,total:1120,pp:"GLC coupe"},
+        {num:2, expense: 686, category: 434,total:1120,pp:"C COUPE GTE"},
+        {num:3, expense: 609, category: 521,total:1120,pp:"元"},
+        {num:4, expense: 533, category: 587,total:1120,pp:"Q80 Inspiration"},
+        {num:5, expense: 413, category: 707,total:1120,pp:"宋"},
+        {num:6, expense: 340, category: 780,total:1120,pp:"Q70L"},
+        {num:7, expense: 330, category: 790,total:1120,pp:"GLE"},
+        {num:8, expense: 204, category: 916,total:1120,pp:"楼兰"},
+        {num:9, expense: 200, category: 920,total:1120,pp:"NSX"},
+        {num:10, expense: 198, category: 922,total:1120,pp:"Quartz"}
     ];
 
 function render(data, category) {
