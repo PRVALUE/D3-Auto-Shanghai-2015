@@ -8,16 +8,27 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="http://autoshanghai2015-cdn.prvalue.cn/swiper.min.css">
-    <link rel="stylesheet" href="http://autoshanghai2015-cdn.prvalue.cn/css/my-css.css" media="screen" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="http://autoshanghai2015-cdn.prvalue.cn/css/style.css"/>
+    <link rel="stylesheet" href="css/my-css.css" media="screen" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-    <!-- Demo styles -->
-    <style>
-    .swiper-container {
-        width: 320px;
-        height: 480px;
-    }
-    </style>
+    <script>
+        var ratio = window.devicePixelRatio || 1;
+        var w = screen.width * ratio;
+        var h = screen.height * ratio;
+        console.log('width: '+w); console.log('height: '+h);
+        if (w < h) {
+            if (h/w >1.584){
+                $(".swiper-container").css("width", w);
+                $(".swiper-container").css("height", 1.584*w);
+            } else {
+                $(".swiper-container").css("width", h/1.584);
+                $(".swiper-container").css("height", h);
+            }
+        } else {
+            $(".swiper-container").css("width", h/1.584);
+            $(".swiper-container").css("height", h);
+        }
+    </script>
 </head>
 <body>
     <!-- Swiper -->
@@ -47,7 +58,7 @@
     var swiper = new Swiper('.swiper-container', {
         direction: 'vertical',
         onSlideChangeEnd: function (swiper) {
-            if (swiper.activeIndex == 1) {
+            if (swiper.activeIndex == 1 && $( "#page1" ).is(':empty')) {
                 $( "#page1" ).load( "2.html" );
             }
             if (swiper.activeIndex == 2) {
