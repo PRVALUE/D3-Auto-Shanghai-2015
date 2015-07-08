@@ -140,14 +140,14 @@ function render(data, category) {
                 .data(data)
             .attr("class", "p21-chart")
             .style("width", function (d) {
-                return (d.total * 0.12) + "px";}
+                return (d.total * 0.1) + "px";}
             );
 
         my_data = d3.select("#canvas-svg4").selectAll("div.p19hbar") // <-D
                 .data(data)
             .attr("class", "p19hbar")
             .style("width", function (d) {
-                return (d.category * 0.12) + "px";}
+                return (d.category * 0.1) + "px";}
             );
             my_data.select("span.p19number")
                 .text(function (d) {
