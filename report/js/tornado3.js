@@ -34,14 +34,14 @@ svg.append("image")
     .attr("y",MARGIN_TOP - 25)  
     .attr("width",25)  
     .attr("height",25)  
-    .attr("xlink:href","../img/weibo.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/weibo.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH + 45)  
     .attr("y",MARGIN_TOP - 25)  
     .attr("width",25)  
     .attr("height",25)  
-    .attr("xlink:href","../img/weixin.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/weixin.png"); 
 
 svg.append("text").text("1").attr({
     x: LABEL_WIDTH -50,
