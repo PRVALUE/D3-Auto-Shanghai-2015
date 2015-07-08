@@ -1,9 +1,4 @@
-$(function(){
-  $("#doughnutChart2").drawDoughnutChart2([
-    { title: "媒体微博",         value : 111,  color: "rgb(242,150,0)" },
-    { title: "媒体人微博", value:  254,   color: "rgb(233,86,94)" }
-  ]);
-});
+
 /*!
  * jquery.drawDoughnutChart.js
  * Version: 0.3(Beta)
@@ -238,3 +233,9 @@ $(function(){
     return $this;
   };
 })(jQuery);
+$(function(){
+  $("#doughnutChart2").drawDoughnutChart2([
+    { title: "媒体微博",         value : 111,  color: "rgb(242,150,0)" },
+    { title: "媒体人微博", value:  254,   color: "rgb(233,86,94)" }
+  ]);
+});
