@@ -148,14 +148,14 @@ function render(data, category) {
                 .data(data)
             .attr("class", "p19-chart")
             .style("width", function (d) {
-                return (d.total * 0.18) + "px";}
+                return (d.total * 0.2) + "px";}
             );
 
         my_data = d3.select("#canvas-svg2").selectAll("div.p19hbar") // <-D
                 .data(data)
             .attr("class", "p19hbar")
             .style("width", function (d) {
-                return (d.category * 0.18) + "px";}
+                return (d.category * 0.2) + "px";}
             );
             my_data.select("span.p19number")
                 .text(function (d) {
