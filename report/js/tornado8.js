@@ -48,70 +48,70 @@ svg.append("image")
     .attr("y",MARGIN_TOP )  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-9.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-9.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 15)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-10.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-10.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 30)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-4.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-4.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 45)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-3.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-3.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 60)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p26-5.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p26-5.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 75)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p26-6.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p26-6.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 90)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p19-6.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p19-6.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 105)  
     .attr("width",16.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p23-8.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p23-8.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 120)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p26-9.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p26-9.png"); 
 
 svg.append("image")
     .attr("x",LABEL_WIDTH - 35)  
     .attr("y",MARGIN_TOP + 135)  
     .attr("width",14.5)  
     .attr("height",14.5)  
-    .attr("xlink:href","../img/p26-10.png"); 
+    .attr("xlink:href","http://autoshanghai2015-cdn.prvalue.cn/img/p26-10.png"); 
 
 /*
 svg.append("text").text("2").attr({
@@ -160,7 +160,7 @@ function render(data, category) {
                 .data(data)
             .attr("class", "p23-chart")
             .style("width", function (d) {
-                return (d.expense * 5 +50) + "px";}
+                return (d.expense * 4 +50) + "px";}
             );
 
         my_data = d3.select("#canvas-svg8").selectAll("div.p19hbar") // <-D
