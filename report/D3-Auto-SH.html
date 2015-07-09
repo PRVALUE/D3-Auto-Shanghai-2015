@@ -10,25 +10,6 @@
     <link rel="stylesheet" href="http://autoshanghai2015-cdn.prvalue.cn/swiper.min.css">
     <link rel="stylesheet" href="css/my-css.css" media="screen" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-
-    <script>
-        var ratio = window.devicePixelRatio || 1;
-        var w = screen.width * ratio;
-        var h = screen.height * ratio;
-        console.log('width: '+w); console.log('height: '+h);
-        if (w < h) {
-            if (h/w >1.584){
-                $(".swiper-container").css("width", w);
-                $(".swiper-container").css("height", 1.584*w);
-            } else {
-                $(".swiper-container").css("width", h/1.584);
-                $(".swiper-container").css("height", h);
-            }
-        } else {
-            $(".swiper-container").css("width", h/1.584);
-            $(".swiper-container").css("height", h);
-        }
-    </script>
 </head>
 <body>
     <!-- Swiper -->
@@ -55,14 +36,32 @@
 
     <!-- Initialize Swiper -->
     <script>
+    var w = screen.width;
+    var h = screen.height;
+    var wid, heig;
+    console.log('width: '+w); console.log('height: '+h);
+    if (w < h) {
+            if (h/w >1.584){
+                wid = w;
+                heig = 1.584*w;
+            } else {
+                wid = h/1.584;
+                heig = h;
+            }
+        } else {
+            wid = h/1.584;
+            heig = h;
+        }
     var swiper = new Swiper('.swiper-container', {
         direction: 'vertical',
+        width: wid,
+        height: heig,
         onSlideChangeEnd: function (swiper) {
             if (swiper.activeIndex == 1 && $( "#page1" ).is(':empty')) {
-                $( "#page1" ).load( "2.html" );
+                $( "#page1" ).load( "2-temp.html" );
             }
-            if (swiper.activeIndex == 2) {
-                $( "#page2" ).load( "3.html" );
+            if (swiper.activeIndex == 2 && $( "#page2" ).is(':empty')) {
+                $( "#page2" ).load( "3-temp.html" );
             }
         }
     });
