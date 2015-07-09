@@ -233,7 +233,7 @@
   };
 })(jQuery);
 $(function(){
-  $("#doughnutChart").drawDoughnutChart([
+  $("#doughnutChart1").drawDoughnutChart([
     { title: "媒体",         value : 372,  color: "rgb(242,150,0)" },
     { title: "自媒体", value:  580,   color: "rgb(233,86,94)" }
   ]);

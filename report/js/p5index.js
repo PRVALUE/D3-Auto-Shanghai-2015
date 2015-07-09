@@ -234,7 +234,7 @@
   };
 })(jQuery);
 $(function(){
-  $("#doughnutChart").drawDoughnutChart([
+  $("#doughnutChart4").drawDoughnutChart([
     { title: "媒体", value : 245,  color: "rgb(242,150,0)" },
     { title: "媒体人", value:  2543,   color: "rgb(233,86,94)" }
   ]);

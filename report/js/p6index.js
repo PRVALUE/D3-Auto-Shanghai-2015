@@ -234,7 +234,7 @@
   };
 })(jQuery);
 $(function(){
-  $("#doughnutChart").drawDoughnutChart([
+  $("#doughnutChart5").drawDoughnutChart([
     { title: "媒体内容量",         value : 767,  color: "rgb(0,146,97)" },
     { title: "自媒体内容量", value:  2769,   color: "rgb(141,194,31)" }
   ]);

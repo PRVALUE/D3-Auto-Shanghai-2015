@@ -234,7 +234,7 @@
   };
 })(jQuery);
 $(function(){
-  $("#doughnutChart").drawDoughnutChart([
+  $("#doughnutChart2").drawDoughnutChart([
     { title: "媒体微博",         value : 372,  color: "rgb(242,150,0)" },
     { title: "媒体人微博", value:  254,   color: "rgb(233,86,94)" }
   ]);
