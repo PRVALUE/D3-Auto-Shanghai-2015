@@ -23,63 +23,8 @@
         </div>
     </div>
 
-<script type="text/javascript">
-    var data = [ // <-A
-        {num:1, expense: 46, category: "汽车爱好者"},
-        {num:2, expense: 46, category: "童济仁的汽车评论"},
-        {num:3, expense: 44, category: "AM汽车经理人"},
-        {num:4, expense: 42, category: "车辙"},
-        {num:5, expense: 35, category: "啊车"},
-        {num:6, expense: 35, category: "汽车工厂"},
-        {num:7, expense: 35, category: "车早茶"},
-        {num:8, expense: 32, category: "玩車教授"},
-        {num:9, expense: 29, category: "车市红点"},
-        {num:10, expense: 29, category: "autocarweekly"}
-    ];
-    function render(data, category) {
-        var div = d3.select("body").selectAll("div.hbar7") // <-B
-                .data(data)
-                .enter()
-                .append("div")
-                    .attr("class", "p7-chart")
-                .append("div")
-                    .attr("class", "hbar7");
-        div.append("span")
-            .attr("class","number4");
-        div.append("span")
-            .attr("class","left3");
-        div.append("span")
-            .attr("class","right");
-        d3.select("body").selectAll("div.hbar7") // <-C
-                .data(data)
-            .exit().remove();
+    <div id="canvas-svgp10"></div>
 
-        my_data = d3.select("body").selectAll("div.hbar7") // <-D
-                .data(data)
-            .attr("class", "hbar7")
-            .style("width", function (d) {
-                return (d.expense * 5) + "px";}
-            );
-            my_data.select("span")
-                .text(function (d) {
-                    return d.num;
-                });
-            my_data.select("span.left3")
-                .text(function (d) {
-                    return d.category;
-                });
-            my_data.select("span.right")
-                .text(function (d) {
-                    return d.expense;
-                });
-        d3.select("body").selectAll("div.hbar7")
-                .filter(function (d, i) { // <-E
-                    return d.category == category;
-                })
-                .classed("selected", true);
-    }
-    render(data);
-</script>
     <div class="p7title">
         <div class="p7-1">
             <span>2014</span>
@@ -89,74 +34,12 @@
         </div>
     </div>
 
-<script type="text/javascript">
+    <div id="canvas-svgp10-2"></div>
 
-    var render2 = function () {
-        var data = [ // <-A
-        {num:1, expense: 16, category: "车市红点"},
-        {num:2, expense: 11, category: "车边社"},
-        {num:3, expense: 10, category: "autocarweekly"},
-        {num:4, expense: 10, category: "文书车云"},
-        {num:5, expense: 5, category: "朱伟华后市场"}
-        ];
-        var div = d3.select("body").selectAll("div.hbar8") // <-B
-                .data(data)
-                .enter()
-                .append("div")
-                    .attr("class", "p7-chart")
-                .append("div")
-                    .attr("class", "hbar8");
-        div.append("span")
-            .attr("class","number4");
-        div.append("span")
-            .attr("class","left3");
-        div.append("span")
-            .attr("class","right");
-        d3.select("body").selectAll("div.hbar8") // <-C
-                .data(data)
-            .exit().remove();
-
-        my_data = d3.select("body").selectAll("div.hbar8") // <-D
-                .data(data)
-            .attr("class", "hbar8")
-            .style("width", function (d) {
-                return (d.expense * 5) + "px";}
-            );
-            my_data.select("span")
-                .text(function (d) {
-                    return d.num;
-                });
-            my_data.select("span.left3")
-                .text(function (d) {
-                    return d.category;
-                });
-            my_data.select("span.right")
-                .text(function (d) {
-                    return d.expense;
-                });
-                /*
-        d3.select("body").selectAll("div.h-bar")
-                .filter(function (d, i) { // <-E
-                    return d.category == category;
-                })
-                .classed("selected", true);
-                */
-    }
-    render2(data);
-/*
-    <div class="p7title">
-        <div class="p7-1">
-            <span>2014</span>
-        </div>
-        <div class="p7-2">
-            <span>TOP10</span>
-        </div>
-    </div>
-*/
-</script>
     <div class="p8title_">
         <p>在微信这个传播媒介上，自媒体经过一年的酝酿，已成为与媒体公众号不相上下的传播势力。</p>
     </div>
-
+<script src="js/p10index.js"></script>
+<script src="js/p10index2.js"></script>
 </body>
 </html>
