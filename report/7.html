@@ -22,63 +22,7 @@
         </div>
     </div>
 
-<script type="text/javascript">
-    var data = [ // <-A
-        {num:1, expense: 192, category: "太平洋汽车"},
-        {num:2, expense: 124, category: "易车网"},
-        {num:3, expense: 115, category: "汽车周刊"},
-        {num:4, expense: 114, category: "人民网"},
-        {num:5, expense: 112, category: "新浪汽车"},
-        {num:6, expense: 94, category: "中国汽车报"},
-        {num:7, expense: 90, category: "中国经营报"},
-        {num:8, expense: 89, category: "汽车点评网"},
-        {num:9, expense: 76, category: "新京报"},
-        {num:10, expense: 68, category: "重庆晚报"}
-    ];
-    function render(data, category) {
-        var div = d3.select("body").selectAll("div.hbar") // <-B
-                .data(data)
-                .enter()
-                .append("div")
-                    .attr("class", "p7-chart")
-                .append("div")
-                    .attr("class", "hbar");
-        div.append("span")
-            .attr("class","number");
-        div.append("span")
-            .attr("class","left");
-        div.append("span")
-            .attr("class","right");
-        d3.select("body").selectAll("div.hbar") // <-C
-                .data(data)
-            .exit().remove();
-
-        my_data = d3.select("body").selectAll("div.hbar") // <-D
-                .data(data)
-            .attr("class", "hbar")
-            .style("width", function (d) {
-                return (d.expense * 0.7) + "px";}
-            );
-            my_data.select("span")
-                .text(function (d) {
-                    return d.num;
-                });
-            my_data.select("span.left")
-                .text(function (d) {
-                    return d.category;
-                });
-            my_data.select("span.right")
-                .text(function (d) {
-                    return d.expense;
-                });
-        d3.select("body").selectAll("div.hbar")
-                .filter(function (d, i) { // <-E
-                    return d.category == category;
-                })
-                .classed("selected", true);
-    }
-    render(data);
-</script>
+    <div id="canvas-svgp7"></div>
 
     <div class="p7title">
         <div class="p7-1">
@@ -89,75 +33,9 @@
         </div>
     </div>
 
-<script type="text/javascript">
+    <div id="canvas-svgp7-2"></div>
 
-    var render2 = function () {
-        var data = [ // <-A
-        {num:1, expense: 344, category: "新浪汽车"},
-        {num:2, expense: 208, category: "太平洋汽车"},
-        {num:3, expense: 182, category: "汽车之家"},
-        {num:4, expense: 125, category: "autocarweekly"},
-        {num:5, expense: 115, category: "易车网"},
-        {num:6, expense: 111, category: "汽车周刊"},
-        {num:7, expense: 108, category: "凤凰汽车"},
-        {num:8, expense: 102, category: "汽车营销分析"},
-        {num:9, expense: 94, category: "中国汽车报"},
-        {num:10, expense: 92, category: "车讯网"}
-        ];
-        var div = d3.select("body").selectAll("div.hbar2") // <-B
-                .data(data)
-                .enter()
-                .append("div")
-                    .attr("class", "p7-chart")
-                .append("div")
-                    .attr("class", "hbar2");
-        div.append("span")
-            .attr("class","number");
-        div.append("span")
-            .attr("class","left");
-        div.append("span")
-            .attr("class","right");
-        d3.select("body").selectAll("div.hbar2") // <-C
-                .data(data)
-            .exit().remove();
-
-        my_data = d3.select("body").selectAll("div.hbar2") // <-D
-                .data(data)
-            .attr("class", "hbar2")
-            .style("width", function (d) {
-                return (d.expense * 0.7) + "px";}
-            );
-            my_data.select("span")
-                .text(function (d) {
-                    return d.num;
-                });
-            my_data.select("span.left")
-                .text(function (d) {
-                    return d.category;
-                });
-            my_data.select("span.right")
-                .text(function (d) {
-                    return d.expense;
-                });
-                /*
-        d3.select("body").selectAll("div.bar2")
-                .filter(function (d, i) { // <-E
-                    return d.category == category;
-                })
-                .classed("selected", true);
-                */
-    }
-    render2(data);
-/*
-    <div class="p7title">
-        <div class="p7-1">
-            <span>2014</span>
-        </div>
-        <div class="p7-2">
-            <span>TOP10</span>
-        </div>
-    </div>
-*/
-</script>
+<script src="js/p7index.js"></script>
+<script src="js/p7index2.js"></script>
 </body>
 </html>
