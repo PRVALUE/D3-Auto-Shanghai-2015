@@ -5,7 +5,7 @@
     <title>上海车展</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <script src='http://autoshanghai2015-cdn.prvalue.cn/js/jquery.min.js'></script>
-
+    <script src="http://autoshanghai2015-cdn.prvalue.cn/js/d3.js"></script>
     <!-- Link CSS -->
     <link rel="stylesheet" href="http://autoshanghai2015-cdn.prvalue.cn/swiper.min.css">
     <link rel="stylesheet" href="css/my-css.css" media="screen" type="text/css" />
@@ -16,7 +16,9 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="http://autoshanghai2015-cdn.prvalue.cn/img/p1.png" style="height:95%;width:100%">
+                <div id="page0">
+                    <img src="http://autoshanghai2015-cdn.prvalue.cn/img/p1.png" style="height:95%;width:100%">
+                </div>
             </div>
             <div class="swiper-slide">
                 <div id="page1"></div>
@@ -24,10 +26,63 @@
             <div class="swiper-slide">
                 <div id="page2"></div>
             </div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">
+                <div id="page3"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page4"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page5"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page6"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page7"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page8"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page9"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page10"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page11"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page12"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page13"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page14"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page15"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page16"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page17"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page18"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page19"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page20"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page21"></div>
+            </div>
         </div>
     </div>
 
@@ -57,11 +112,12 @@
         width: wid,
         height: heig,
         onSlideChangeEnd: function (swiper) {
-            if (swiper.activeIndex == 1 && $( "#page1" ).is(':empty')) {
-                $( "#page1" ).load( "2-temp.html" );
-            }
-            if (swiper.activeIndex == 2 && $( "#page2" ).is(':empty')) {
-                $( "#page2" ).load( "3-temp.html" );
+            var prePageId = '#page' + swiper.previousIndex;
+            for (i = 0; i < 5; i++) { 
+                if (swiper.activeIndex == i && $( "#page" + i ).is(':empty')) {
+                    $(prePageId).empty();
+                    $( "#page" + i ).load( (i+1).toString() + "-temp.html" );
+                }
             }
         }
     });
