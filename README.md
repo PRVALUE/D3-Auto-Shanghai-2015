@@ -39,7 +39,7 @@ The usage of Swiper is easy and simple, just follow the pattern below:
 </body>
 </html>
 ```
-The last <script> in the example above is for initializing Swiper, including setting the width and height of the container. In our case, we set width and height dynamically according to the screen size.
+The last \<script\> in the example above is for initializing Swiper, including setting the ```width``` and ```height``` of the container. In our case, we set ```width``` and ```height``` dynamically according to the ```screen``` size.
 Some useful properties and callback functions:
 
 Name | Definition
@@ -50,3 +50,5 @@ mySwiper.width             | Width of container
 mySwiper.height            | Height of container
 mySwiper.activeIndex       | Index number of currently active slide
 mySwiper.previousIndex     | Index number of previously active slide
+
+For all other methods and properties, please refer to [swiper api](http://www.idangero.us/swiper/api/).
