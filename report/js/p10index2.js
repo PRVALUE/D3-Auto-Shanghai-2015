@@ -1,5 +1,7 @@
 var svg = d3.select("#canvas-svgp10-2").append("div.hbar");
 
+var duration = 500;
+
 var render2 = function () {
         var data = [ // <-A
         {num:1, expense: 16, category: "车市红点"},
@@ -14,7 +16,8 @@ var render2 = function () {
                 .append("div")
                     .attr("class", "p7-chart")
                 .append("div")
-                    .attr("class", "hbar8");
+                    .attr("class", "hbar8")
+                    .style("width", "0px");
         div.append("span")
             .attr("class","number4");
         div.append("span")
@@ -27,10 +30,10 @@ var render2 = function () {
 
         my_data = d3.select("#canvas-svgp10-2").selectAll("div.hbar8") // <-D
                 .data(data)
-            .attr("class", "hbar8")
-            .style("width", function (d) {
-                return (d.expense * 5) + "px";}
-            );
+            my_data.transition().duration(duration)
+                .style("width", function (d) { 
+                    return barWidth(d) * 5 + "px"; 
+                })
             my_data.select("span")
                 .text(function (d) {
                     return d.num;
@@ -50,5 +53,8 @@ var render2 = function () {
                 })
                 .classed("selected", true);
                 */
+    }
+    function barWidth(d) {
+        return d.expense;
     }
     render2(data);

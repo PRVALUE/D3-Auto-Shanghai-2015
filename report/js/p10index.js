@@ -1,5 +1,7 @@
 var svg = d3.select("#canvas-svgp10").append("div.hbar");
 
+var duration = 500;
+
 var data = [ // <-A
         {num:1, expense: 46, category: "汽车爱好者"},
         {num:2, expense: 46, category: "童济仁的汽车评论"},
@@ -19,7 +21,8 @@ var data = [ // <-A
                 .append("div")
                     .attr("class", "p7-chart")
                 .append("div")
-                    .attr("class", "hbar7");
+                    .attr("class", "hbar7")
+                    .style("width", "0px");
         div.append("span")
             .attr("class","number4");
         div.append("span")
@@ -32,10 +35,10 @@ var data = [ // <-A
 
         my_data = d3.select("#canvas-svgp10").selectAll("div.hbar7") // <-D
                 .data(data)
-            .attr("class", "hbar7")
-            .style("width", function (d) {
-                return (d.expense * 5) + "px";}
-            );
+            my_data.transition().duration(duration)
+                .style("width", function (d) { 
+                    return barWidth(d) * 5 + "px"; 
+                })
             my_data.select("span")
                 .text(function (d) {
                     return d.num;
@@ -53,5 +56,8 @@ var data = [ // <-A
                     return d.category == category;
                 })
                 .classed("selected", true);
+    }
+    function barWidth(d) {
+        return d.expense;
     }
     render(data);
