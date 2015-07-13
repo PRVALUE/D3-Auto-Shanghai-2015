@@ -1,5 +1,6 @@
 var svg = d3.select("#canvas-svgp7").append("div.hbar");
 
+var duration = 500;
 var data = [ // <-A
         {num:1, expense: 192, category: "太平洋汽车"},
         {num:2, expense: 124, category: "易车网"},
@@ -19,7 +20,8 @@ var data = [ // <-A
                 .append("div")
                     .attr("class", "p7-chart")
                 .append("div")
-                    .attr("class", "hbar");
+                    .attr("class", "hbar")
+                    .style("width", "0px");
         div.append("span")
             .attr("class","number");
         div.append("span")
@@ -30,12 +32,12 @@ var data = [ // <-A
                 .data(data)
             .exit().remove();
 
-        my_data = d3.select("#canvas-svgp7").selectAll("div.hbar") // <-D
+        var my_data = d3.select("#canvas-svgp7").selectAll("div.hbar") // <-D
                 .data(data)
-            .attr("class", "hbar")
-            .style("width", function (d) {
-                return (d.expense * 0.7) + "px";}
-            );
+            my_data.transition().duration(duration)
+                .style("width", function (d) { 
+                    return barWidth(d) + "px"; 
+                })
             my_data.select("span")
                 .text(function (d) {
                     return d.num;
@@ -53,5 +55,8 @@ var data = [ // <-A
                     return d.category == category;
                 })
                 .classed("selected", true);
+    }
+    function barWidth(d) {
+        return d.expense;
     }
     render(data);

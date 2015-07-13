@@ -59,7 +59,7 @@ button {
 }
 .p19hbar {
     min-height: 13px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(205,45,45);
     margin-bottom: 2px;
     font-size: 11px;
@@ -70,7 +70,7 @@ button {
 }
 .p24-1hbar {
     min-height: 13px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(0,146,97);
     margin-bottom: 2px;
     font-size: 11px;
@@ -81,7 +81,7 @@ button {
 }
 .p24hbar {
     min-height: 13px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(205,45,45);
     margin-bottom: 2px;
     font-size: 11px;
@@ -91,7 +91,7 @@ button {
 }
 .p24-2hbar {
     min-height: 13px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(3,110,183);
     margin-bottom: 2px;
     font-size: 11px;
@@ -102,7 +102,7 @@ button {
 }
 .p34hbar {
     min-height: 13px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(219,220,220);
     margin-bottom: 2px;
     font-size: 11px;
@@ -182,7 +182,7 @@ button {
 }
 .hbar {
     min-height: 15px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(205,45,45);
     margin-bottom: 2px;
     font-size: 11px;
@@ -193,7 +193,7 @@ button {
 }
 .hbar2 {
     min-height: 15px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(205,45,45);
     margin-bottom: 2px;
     font-size: 11px;
@@ -204,7 +204,7 @@ button {
 }
 .hbar3 {
     min-height: 15px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(242,150,0);
     margin-bottom: 2px;
     font-size: 11px;
@@ -215,7 +215,7 @@ button {
 }
 .hbar4 {
     min-height: 15px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(242,150,0);
     margin-bottom: 2px;
     font-size: 11px;
@@ -226,7 +226,7 @@ button {
 }
 .hbar5 {
     min-height: 15px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(141,194,31);
     margin-bottom: 2px;
     font-size: 11px;
@@ -237,7 +237,7 @@ button {
 }
 .hbar6 {
     min-height: 15px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(141,194,31);
     margin-bottom: 2px;
     font-size: 11px;
@@ -248,7 +248,7 @@ button {
 }
 .hbar7 {
     min-height: 15px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(0,146,97);
     margin-bottom: 2px;
     font-size: 11px;
@@ -259,7 +259,7 @@ button {
 }
 .hbar8 {
     min-height: 15px;
-    min-width: 10px;
+    min-width: 1px;
     background-color: rgb(0,146,97);
     margin-bottom: 2px;
     font-size: 11px;

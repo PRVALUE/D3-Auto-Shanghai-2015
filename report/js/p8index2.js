@@ -1,7 +1,8 @@
 var svg = d3.select("#canvas-svgp8-2").append("div.hbar");
 
- var render2 = function () {
-        var data = [ // <-A
+var duration = 500;
+
+var data = [ // <-A
         {num:1, expense: 262, category: "汽车经济杂志张久"},
         {num:2, expense: 55, category: "苏雨农"},
         {num:3, expense: 53, category: "车市红点"},
@@ -12,14 +13,16 @@ var svg = d3.select("#canvas-svgp8-2").append("div.hbar");
         {num:8, expense: 19, category: "汽车公社赵威"},
         {num:9, expense: 19, category: "汽车公社_魏东升"},
         {num:10, expense: 19, category: "郭登礼-汽车周刊"}
-        ];
+    ];
+var render2 = function () {
         var div = d3.select("#canvas-svgp8-2").selectAll("div.hbar4") // <-B
                 .data(data)
                 .enter()
                 .append("div")
                     .attr("class", "p7-chart")
                 .append("div")
-                    .attr("class", "hbar4");
+                    .attr("class", "hbar4")
+                    .style("width", "0px");
         div.append("span")
             .attr("class","number2");
         div.append("span")
@@ -32,10 +35,10 @@ var svg = d3.select("#canvas-svgp8-2").append("div.hbar");
 
         my_data = d3.select("#canvas-svgp8-2").selectAll("div.hbar4") // <-D
                 .data(data)
-            .attr("class", "hbar4")
-            .style("width", function (d) {
-                return (d.expense * 0.9) + "px";}
-            );
+            my_data.transition().duration(duration)
+                .style("width", function (d) { 
+                    return barWidth(d) * 0.9 + "px"; 
+                })
             my_data.select("span")
                 .text(function (d) {
                     return d.num;
@@ -55,5 +58,8 @@ var svg = d3.select("#canvas-svgp8-2").append("div.hbar");
                 })
                 .classed("selected", true);
                 */
+    }
+    function barWidth(d) {
+        return d.expense;
     }
     render2(data);
