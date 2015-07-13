@@ -6,6 +6,8 @@ var sizeFn = absoluteSize;
 
 var entries = null;
 
+var duration = 500;
+
 var buttons = d3.select("#canvas-svg").append("div").style("margin-bottom", "10px");
 /*
 var showCounts = buttons.append("span").attr("class", "btn btn-primary").text("Counts").on("click", function() {
