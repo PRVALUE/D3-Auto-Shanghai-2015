@@ -6,7 +6,7 @@ var sizeFn = absoluteSize;
 
 var entries = null;
 
-var duration = 500;
+var duration = 1200;
 
 var buttons = d3.select("#canvas-svg5").append("div").style("margin-bottom", "10px");
 /*

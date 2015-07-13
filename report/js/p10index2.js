@@ -1,6 +1,6 @@
 var svg = d3.select("#canvas-svgp10-2").append("div.hbar");
 
-var duration = 500;
+var duration = 1200;
 
 var render2 = function () {
         var data = [ // <-A

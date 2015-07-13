@@ -6,6 +6,8 @@ var sizeFn = absoluteSize;
 
 var entries = null;
 
+var duration = 1200;
+
 var buttons = d3.select("#canvas-svg13").append("div").style("margin-bottom", "10px");
 /*
 var showCounts = buttons.append("span").attr("class", "btn btn-primary").text("Counts").on("click", function() {
@@ -130,8 +132,10 @@ function render(data, category) {
                 .enter()
                 .append("div")
                     .attr("class", "p34-chart")
+                    .style("width", "0px")
                 .append("div")
-                    .attr("class", "p34hbar");
+                    .attr("class", "p34hbar")
+                    .style("width", "0px");
         d3.select("div.p19wrapper").selectAll("div.p34-chart")
             .append("span")
             .attr("class","text-right");
@@ -145,19 +149,21 @@ function render(data, category) {
                 .data(data)
             .exit().remove();
 
-        d3.select("#canvas-svg13").selectAll("div.p34-chart") // <-D
+        var greed_barchart = d3.select("#canvas-svg13").selectAll("div.p34-chart") // <-D
                 .data(data)
             .attr("class", "p34-chart")
-            .style("width", function (d) {
-                return (d.total * 0.26) + "px";}
-            );
+            greed_barchart.transition().duration(duration)
+                .style("width", function (d) { 
+                    return barWidth2(d) * 0.26 + "px"; 
+                });
 
         my_data = d3.select("#canvas-svg13").selectAll("div.p34hbar") // <-D
                 .data(data)
             .attr("class", "p34hbar")
-            .style("width", function (d) {
-                return (d.category * 0.26) + "px";}
-            );
+            my_data.transition().duration(duration)
+                .style("width", function (d) { 
+                    return (barWidth(d) * 0.26) + "px"; 
+                })
             my_data.select("span.p34left")
                 .text(function (d) {
                     return d.pp;
@@ -167,6 +173,12 @@ function render(data, category) {
                 .text(function (d) {
                     return d.expense;
                 });
+    }
+    function barWidth(d) {
+        return d.category;
+    }
+    function barWidth2(d) {
+        return d.total;
     }
     render(data);
 

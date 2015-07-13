@@ -1,6 +1,6 @@
 var svg = d3.select("#canvas-svgp7-2").append("div.hbar");
 
-var duration = 500;
+var duration = 1200;
 var data = [ // <-A
         {num:1, expense: 344, category: "新浪汽车"},
         {num:2, expense: 208, category: "太平洋汽车"},

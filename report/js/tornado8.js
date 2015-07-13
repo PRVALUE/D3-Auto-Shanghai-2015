@@ -6,6 +6,8 @@ var sizeFn = absoluteSize;
 
 var entries = null;
 
+var duration = 1200;
+
 var buttons = d3.select("#canvas-svg8").append("div").style("margin-bottom", "10px");
 /*
 var showCounts = buttons.append("span").attr("class", "btn btn-primary").text("Counts").on("click", function() {
@@ -143,8 +145,10 @@ function render(data, category) {
                 .enter()
                 .append("div")
                     .attr("class", "p23-chart")
+                    .style("width", "0px")
                 .append("div")
-                    .attr("class", "p19hbar");
+                    .attr("class", "p19hbar")
+                    .style("width", "0px");
         d3.select("div.p26-1wrapper").selectAll("div.p23-chart")
             .append("span")
             .attr("class","text-right");
@@ -156,20 +160,21 @@ function render(data, category) {
                 .data(data)
             .exit().remove();
 
-        d3.select("#canvas-svg8").selectAll("div.p23-chart") // <-D
+        var greed_barchart = d3.select("#canvas-svg8").selectAll("div.p23-chart") // <-D
                 .data(data)
             .attr("class", "p23-chart")
-            .style("width", function (d) {
-                return (d.expense * 4 +50) + "px";}
-            );
+            greed_barchart.transition().duration(duration)
+                .style("width", function (d) { 
+                    return (barWidth2(d) * 4+ 50) + "px"; 
+                });
 
         my_data = d3.select("#canvas-svg8").selectAll("div.p19hbar") // <-D
                 .data(data)
             .attr("class", "p19hbar")
-            .style("width", function (d) {
-            //    return (d.category * 0.2) + "px";}
-                return (d.total) + "px";}
-            );
+            my_data.transition().duration(duration)
+                .style("width", function (d) { 
+                    return barWidth(d) + "px"; 
+                })
             my_data.select("span.p19number")
                 .text(function (d) {
                     return d.num;
@@ -183,6 +188,12 @@ function render(data, category) {
                 .text(function (d) {
                     return d.expense;
                 });
+    }
+    function barWidth(d) {
+        return d.total;
+    }
+    function barWidth2(d) {
+        return d.expense;
     }
     render(data);
 
