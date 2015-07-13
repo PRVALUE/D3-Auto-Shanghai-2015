@@ -83,6 +83,60 @@
             <div class="swiper-slide">
                 <div id="page21"></div>
             </div>
+            <div class="swiper-slide">
+                <div id="page22"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page23"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page24"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page25"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page26"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page27"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page28"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page29"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page30"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page31"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page32"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page33"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page34"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page35"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page36"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page37"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page38"></div>
+            </div>
+            <div class="swiper-slide">
+                <div id="page39"></div>
+            </div>
         </div>
     </div>
 
@@ -113,7 +167,7 @@
         height: heig,
         onSlideChangeEnd: function (swiper) {
             var prePageId = '#page' + swiper.previousIndex;
-            for (i = 0; i < 5; i++) { 
+            for (i = 0; i < 40; i++) {
                 if (swiper.activeIndex == i && $( "#page" + i ).is(':empty')) {
                     $(prePageId).empty();
                     $( "#page" + i ).load( (i+1).toString() + "-temp.html" );
