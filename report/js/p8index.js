@@ -36,7 +36,7 @@ var data = [ // <-A
                 .data(data)
             my_data.transition().duration(duration)
                 .style("width", function (d) { 
-                    return barWidth(d) * 10 + "px"; 
+                    return barWidth(d) * 0.9 + "px"; 
                 })
             my_data.select("span")
                 .text(function (d) {
