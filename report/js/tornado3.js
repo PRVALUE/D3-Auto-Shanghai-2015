@@ -6,6 +6,8 @@ var sizeFn = absoluteSize;
 
 var entries = null;
 
+var duration = 1200;
+
 var buttons = d3.select("#canvas-svg3").append("div").style("margin-bottom", "10px");
 /*
 var showCounts = buttons.append("span").attr("class", "btn btn-primary").text("Counts").on("click", function() {
@@ -459,12 +461,15 @@ function render() {
         row.append("rect").attr({
             "class": "male",
             fill: "rgb(203,47,43)",
-            height: ROW_HEIGHT - .5
+            height: ROW_HEIGHT - .5,
+            x:0,
+            width:0
         });
         row.append("rect").attr({
             "class": "female",
             fill: "rgb(141,194,31)",
-            height: ROW_HEIGHT - .5
+            height: ROW_HEIGHT - .5,
+            width:0
         });
     }).call(sizeFn, entries);
     row.select(".label").text(function(d) {
@@ -510,7 +515,7 @@ function absoluteSize(row, entries) {
     maleScale.domain([ 0, max ]).range([ 0, -(WIDTH - LABEL_WIDTH) / 2 ]);
     femaleAxis.ticks(0).tickFormat(null);
     maleAxis.ticks(0).tickFormat(null);
-    row.select(".male").attr({
+    row.transition().duration(duration).select(".male").attr({
         width: function(d) {
             return maleScale(0) - maleScale(d.male);
         },
@@ -518,7 +523,7 @@ function absoluteSize(row, entries) {
             return maleScale(d.male);
         }
     });
-    row.select(".female").attr({
+    row.transition().duration(duration).select(".female").attr({
         width: function(d) {
             return femaleScale(d.female) - femaleScale(0);
         },
